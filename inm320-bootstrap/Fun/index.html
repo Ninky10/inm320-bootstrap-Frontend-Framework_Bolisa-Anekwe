@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ninky</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/stylesheet.css"/>
+  </head>
+
+  <body>
+    <main class="container-fluid">
+      <section class="row">
+        <!-- Sidebar -->
+        <aside class="col-md-3 col-lg-2 sidebar p-4 text-white">
+          <h1 class="h5 mb-4 d-flex align-items-center gap-2">
+            <img src="assets/images/logo.svg" width="24" alt="Dashboard logo"/>Dashboard Kit
+          </h1>
+
+          <ul class="nav flex-column gap-2">
+            <li>
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <img src="assets/images/1. overview.svg" width="18"/>Overview
+              </a>
+            </li>
+
+            <li>
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <img src="assets/images/2. tickets.svg" width="18"/>Tickets
+              </a>
+            </li>
+
+            <li>
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <img src="assets/images/3. ideas.svg" width="18"/>Ideas
+              </a>
+            </li>
+
+            <li>
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <img src="assets/images/4. contacts.svg" width="18"/>Contacts
+              </a>
+            </li>
+
+            <li>
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <img src="assets/images/5. agents.svg" width="18"/>Agents
+              </a>
+            </li>
+
+            <li>
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <img src="assets/images/6. articles.svg" width="18"/>Articles
+              </a>
+                <button class="btn btn-primary w-100 mt-3" data-bs-toggle="modal" data-bs-target="#taskModal">Tasks
+                </button>
+            </li>
+          </ul>
+          <hr class="my-4 border-secondary" />
+          <ul class="nav flex-column gap-2">
+            <li>
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <img src="assets/images/a_1. settings.svg" width="18"/>Settings
+              </a>
+            </li>
+
+            <li>
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <img src="assets/images/a_2. subscription.svg" width="18"/>Subscription
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <section class="col-md-9 col-lg-10 p-0">
+          <!-- Header -->
+          <header class="d-flex justify-content-between align-items-center border-bottom bg-white p-3">
+            <h2 class="h5 mb-0">Overview
+            </h2>
+
+            <section class="d-flex align-items-center gap-3">
+              <input class="form-control form-control-sm search-input" type="search" placeholder="Search"/>
+              <span>🔔</span>
+              <span class="small text-muted">Ninky</span>
+              <img src="assets/images/Screenshot 2026-01-07 081454.png" class="avatar-img" alt="user"/>
+            </section>
+          </header>
+
+          <!-- Stats -->
+          <section class="p-4">
+            <section class="row g-4">
+              <article class="col-md-6 col-lg-3">
+                <section class="card text-center shadow-sm">
+                  <section class="card-body">
+                    <h6 class="text-muted small">Unresolved
+                    </h6>
+                    <h2 class="fw-bold">60
+                    </h2>
+                  </section>
+                </section>
+              </article>
+
+              <article class="col-md-6 col-lg-3">
+                <section class="card text-center shadow-sm">
+                  <section class="card-body">
+                    <h6 class="text-muted small">Overdue
+                    </h6>
+                    <h2 class="fw-bold">16
+                    </h2>
+                  </section>
+                </section>
+              </article>
+
+              <article class="col-md-6 col-lg-3">
+                <section class="card text-center shadow-sm">
+                  <section class="card-body">
+                    <h6 class="text-muted small">Open
+                    </h6>
+                    <h2 class="fw-bold">43
+                    </h2>
+                  </section>
+                </section>
+              </article>
+
+              <article class="col-md-6 col-lg-3">
+                <section class="card text-center shadow-sm">
+                  <section class="card-body">
+                    <h6 class="text-muted small">On Hold
+                    </h6>
+                    <h2 class="fw-bold">64
+                    </h2>
+                  </section>
+                </section>
+              </article>
+            </section>
+          </section>
+
+          <!-- Trends -->
+          <section class="px-4 pb-4">
+            <section class="card shadow-sm">
+              <section class="card-body">
+                <h5 class="fw-semibold">Today's Trends
+                </h5>
+                <small class="text-muted">as of 10 March 2026, 09:00 PM
+                </small>
+
+                <section class="row mt-4">
+                  <article class="col-lg-8">
+                    <img src="assets/images/Screenshot 2026-03-05 090508.png" class="chart-image" alt="chart"/>
+                  </article>
+
+                  <article class="col-lg-4 stats-column">
+                    <section class="stat-item">
+                      <p class="stat-label">Resolved
+                      </p>
+                      <h5 class="stat-value">449
+                      </h5>
+                    </section>
+
+                    <section class="stat-item">
+                      <p class="stat-label">Received
+                      </p>
+                      <h5 class="stat-value">426
+                      </h5>
+                    </section>
+
+                    <section class="stat-item">
+                      <p class="stat-label">Average first response time
+                      </p>
+                      <h5 class="stat-value">33m
+                      </h5>
+                    </section>
+
+                    <section class="stat-item">
+                      <p class="stat-label">Average response time
+                      </p>
+                      <h5 class="stat-value">3h 8m
+                      </h5>
+                    </section>
+
+                    <section class="stat-item">
+                      <p class="stat-label">Resolution within SLA
+                      </p>
+                      <h5 class="stat-value">94%
+                      </h5>
+                    </section>
+                  </article>
+                </section>
+              </section>
+            </section>
+          </section>
+          
+          <!-- Dashboard Bottom Row - Unresolved Tickets and Tasks cards -->
+          <section class="px-4 pb-5">
+            <section class="row g-4">
+              <!-- Unresolved Tickets Card -->
+              <article class="col-lg-6">
+                <section class="card shadow-sm">
+                  <section class="card-body">
+                    <h5 class="fw-semibold mb-4">Unresolved Tickets
+                    </h5>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex justify-content-between">
+                        <span>Waiting on Feature Request</span>
+                        <span class="text-muted small">4238</span>
+                      </li>
+
+                      <li class="list-group-item d-flex justify-content-between">
+                        <span>Awaiting Customer Response</span>
+                        <span class="text-muted small">1005</span>
+                      </li>
+
+                      <li class="list-group-item d-flex justify-content-between">
+                        <span>Awaiting Developer Fix</span>
+                        <span class="text-muted small">914</span>
+                      </li>
+
+                      <li class="list-group-item d-flex justify-content-between">
+                        <span>Pending</span>
+                        <span class="text-muted small">281</span>
+                      </li>
+                    </ul>
+                  </section>
+                </section>
+              </article>
+
+              <!-- Tasks Card -->
+              <article class="col-lg-6">
+                <section class="card shadow-sm">
+                  <section class="card-body">
+                    <h5 class="fw-semibold mb-4">Tasks</h5>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <input type="checkbox" /> Finish ticket update
+                      </li>
+
+                      <li class="list-group-item">
+                        <input type="checkbox" /> Review new design
+                      </li>
+
+                      <li class="list-group-item">
+                        <input type="checkbox" /> Fix sidebar issue
+                      </li>
+
+                      <li class="list-group-item">
+                        <input type="checkbox" /> Update documentation
+                      </li>
+                    </ul>
+                  </section>
+                </section>
+              </article>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>

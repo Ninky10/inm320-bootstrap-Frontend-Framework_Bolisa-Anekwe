@@ -1,0 +1,19 @@
+{
+  "name": "inm320-bootstrap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "bestdeveloper": "lite-server --baseDir=\"fun\"",
+    "ninkyisthebest": "sass --watch src/scss:Fun/assets/css",
+    "start": "concurrently \"npm run bestdeveloper\" \"npm run ninkyisthebest\""
+  },
+  "keywords": [],
+  "author": "Ninky",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.97.3"
+  }
+}

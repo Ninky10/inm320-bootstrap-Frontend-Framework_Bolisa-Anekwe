@@ -1,0 +1,123 @@
+/* Variables */
+/* Mixin */
+/* Body */
+body {
+  background-color: #f5f6fa;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #363740;
+  min-height: 100vh;
+}
+.sidebar img {
+  opacity: 0.8;
+}
+.sidebar .nav-link {
+  color: #a9a8a8;
+  font-size: 0.95rem;
+}
+.sidebar .nav-link:hover {
+  color: #fff;
+  background-color: #465470;
+  border-radius: 6px;
+}
+.sidebar .nav-link:hover img {
+  opacity: 1;
+}
+.sidebar .nav-link.active {
+  background-color: #465470;
+  color: #ffffff;
+  border-radius: 6px;
+}
+.sidebar .btn {
+  font-size: 0.9rem;
+}
+
+/* Card hover effects */
+.card {
+  transition: all 0.2s ease;
+}
+.card:hover {
+  border: 1px solid #3c49f5;
+  cursor: pointer;
+}
+
+/* Search */
+.search-input {
+  max-width: 220px;
+}
+
+/* Avatar */
+.avatar-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Chart */
+.chart-container {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.chart-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Stats column styling like Figma */
+.stats-column {
+  border-left: 1px solid #e5e7eb;
+  padding-left: 25px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+.stat-item:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-weight: 700;
+  margin: 0;
+}
+
+.form-check {
+  margin-bottom: 0;
+}
+
+.form-check-input {
+  cursor: pointer;
+}
+
+/* Mobile First Responsive */
+@media (min-width: 650px) {
+  .sidebar {
+    min-height: 100vh;
+  }
+  .search-input {
+    max-width: 220px;
+  }
+  .chart-image {
+    max-height: 400px;
+  }
+  .stats-column {
+    border-left: 1px solid #e5e7eb;
+    padding-left: 25px;
+  }
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
